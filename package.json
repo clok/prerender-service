@@ -4,7 +4,7 @@
   "description": "Common Prerender service for Deis",
   "main": "server.js",
   "dependencies": {
-    "prerender": "^4.0.5",
+    "prerender": "^4.0.5"
   },
   "devDependencies": {},
   "scripts": {
