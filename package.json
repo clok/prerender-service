@@ -1,10 +1,10 @@
 {
   "name": "prerender-service",
-  "version": "1.0.0",
-  "description": "Common Prerender service for Deis",
+  "version": "1.0.1",
+  "description": "Common Prerender service for Docker",
   "main": "server.js",
   "dependencies": {
-    "prerender": "^4.0.5"
+    "prerender": "^4.3.1"
   },
   "devDependencies": {},
   "scripts": {
