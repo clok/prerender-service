@@ -24,9 +24,17 @@ if (typeof process.env.S3_CACHE !== 'undefined' && process.env.S3_CACHE) {
   server.use(prerender.s3HtmlCache());
 }
 
+if (typeof process.env.ALLOWED_DOMAINS !== 'undefined' && process.env.ALLOWED_DOMAINS) {
+  console.log("whitelist configured");
+  server.use(prerender.whitelist());
+}
+
+if (typeof process.env.BLACKLISTED_DOMAINS !== 'undefined' && process.env.BLACKLISTED_DOMAINS) {
+  console.log("blacklist configured");
+  server.use(prerender.blacklist());
+}
+
 server.use(prerender.sendPrerenderHeader());
-server.use(prerender.whitelist());
-server.use(prerender.blacklist());
 server.use(prerender.logger());
 server.use(prerender.removeScriptTags());
 server.use(prerender.httpHeaders());
