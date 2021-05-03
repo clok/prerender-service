@@ -4,7 +4,7 @@
   "description": "Common Prerender service for Docker",
   "main": "server.js",
   "dependencies": {
-    "prerender": "^4.3.1"
+    "prerender": "^5.0.0"
   },
   "devDependencies": {},
   "scripts": {
