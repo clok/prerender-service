@@ -1,4 +1,4 @@
-FROM node:6.17
+FROM node:21.3
 MAINTAINER Synctree Appforce
 
 RUN apt-get update \
